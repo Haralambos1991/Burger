@@ -3,14 +3,14 @@ var connection = require("../config/connection.js")
 
 // Object for all our SQL statement functions.
 var orm = {
-    selectAll: function(tableinput, cb) {
-      let queryString = "SELECT * FROM" + tableinput + ";";
+   selectAll: function(tableinput, cb) {
+     let queryString = "SELECT * FROM" + tableinput + ";";
       connection.query(query  + function(error) {
       if (err) { 
          throw error;
       }
       cb(result);
-        });
+       });
     },
     insertOne: function (table, cols, vals, cb) {
         var queryString = "INSERT INTO " + table;

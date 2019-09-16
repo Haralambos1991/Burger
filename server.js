@@ -1,8 +1,7 @@
 var express = require("express");
-var bodyParser = require("body-parser");
 
 
-let PORT = process.env.port || 7080;
+const PORT = process.env.port || 3000;
 
 var app = express();
 
@@ -10,8 +9,7 @@ var app = express();
 app.use(express.static("public"));
 
 //Handling data parsing with express//
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json);
+//app.use(bodyParser.urlencoded({ extended: true }));
 
 
 
@@ -22,14 +20,16 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 //Right now we gonna import routes and we gonna give the server access to them//
-let routes = require("./controllers/burgers_controller.js");
+let routes = require("./controllers/burgersController.js");
 
-// app.use(routes);
+app.use(routes);
 app.get("/", function(req,res){
-    res.send('hello wolrd')
-})
+res.send("testing")
+});
+
 
 //Right now we gonna start our app//
 app.listen(PORT, function() {
 console.log("App is listening on Port: " + PORT);
 });
+  

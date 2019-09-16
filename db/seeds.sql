@@ -3,7 +3,6 @@ INSERT INTO burgers(
         devoured),
 "Cheeseburger"
 0
-),
 (
 "Hamburger"
 0

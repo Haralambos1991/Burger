@@ -27,7 +27,7 @@ let burger = {
 
  //At the end we update our burger menu in order to select from the listed burgers in the menu//
     updateOne: function(id, cb) {
-        orm.updateone("burgers", id, function (res) {
+        orm.updateOne("burgers", id, function (res) {
             cb(response);
         });
     }
