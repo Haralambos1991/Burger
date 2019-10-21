@@ -19,12 +19,12 @@
   "homepage": "https://github.com/Haralambos1991/Burger#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "dependencies": "0.0.1",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
     "mysql": "^2.16.0",
+    "peer": "^0.2.10",
     "truffle-hdwallet-provider": "^1.0.2"
-    
-    
   },
   "devDependencies": {}
 }

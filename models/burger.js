@@ -1,37 +1,28 @@
-
-
 //Inside your burger directory, create a folder named models.//
 //In models, make a burger.js file.//
 //Inside burger.js, import orm.js into burger.js//
 //Also inside burger.js, create the code that will call the ORM functions using burger specific input for the ORM.
 //Export at the end of the burger.js file.//
 
-
-
-var orm = ("..config/orm.js")
+var orm = "..config/orm.js";
 //We import the selectAll method to the burger.js and we trigger the callbacl function//
 let burger = {
-   selectAll : function(cb) {
-       orm.selectAll("burgers", function(res) {
-  cb(response);
-
-       });
+    selectAll: function(cb) {
+        orm.selectAll("burgers", function(res) {
+            cb(response);
+        });
     },
-// We do the same thing for the method insert one and //we pass some params like vals,cols and at the end we trigger the callback function
-    insertOne: function (cols, vals, cb) {
-        orm.insertOne("burgers",cols,vals, function (res) {
-        cb(response);
-
+    // We do the same thing for the method insert one and //we pass some params like vals,cols and at the end we trigger the callback function
+    insertOne: function(cols, vals, cb) {
+        orm.insertOne("burgers", cols, vals, function(res) {
+            cb(response);
         });
     },
 
- //At the end we update our burger menu in order to select from the listed burgers in the menu//
+    //At the end we update our burger menu in order to select from the listed burgers in the menu//
     updateOne: function(id, cb) {
-        orm.updateOne("burgers", id, function (res) {
+        orm.updateOne("burgers", id, function(res) {
             cb(response);
         });
     }
 };
-
-  
-

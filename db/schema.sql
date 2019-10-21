@@ -1,10 +1,12 @@
-CREATE DATABASE burger db;
+CREATE DATABASE burgers_db;
+USE burgers_db;
 
-USE burger db;
+CREATE TABLE burgers
+(
 
-CREATE TABLE burger db; (
-id INT (10) AUTO INCREMENT NOT NULL,
-burgers_name VARCHAR (156) NOT NULL,
-devoured BOOLEAN,
-PRIMARY KEY (id);
-);
+    id int NOT NULL,
+    burger_name varchar(255) NOT NULL,
+    devoured BOOLEAN NOT NULL,
+    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+)
