@@ -38,7 +38,7 @@ Using an home-grown ORM, the app has 3 basic CRUD functions...
 
 * From a terminal window, run npm install
 
-* Launch with by running node server
+* Launch with by running node server.js
 
 
 

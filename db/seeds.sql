@@ -1,6 +1,11 @@
 INSERT INTO burgers
         (burger_name, devoured, date)
 VALUES
-        ("Double Shackburger w/ Pickles", 0, CURRENT_TIMESTAMP),
-        ("Royale Avec Fromage", 0, CURRENT_TIMESTAMP),
-        ("Krusty Burger", 0, CURRENT_TIMESTAMP);
+        ("Hamburger", 0, CURRENT_TIMESTAMP),
+        ("Cheeseburger", 0, CURRENT_TIMESTAMP),
+        ("Fish Burger", 0, CURRENT_TIMESTAMP),
+        ("Slag Burger", 0, CURRENT_TIMESTAMP),
+        ("Chilli Burger", 0, CURRENT_TIMESTAMP),
+        ("Rice Burger", 0, CURRENT_TIMESTAMP),
+        ("Salmon Burger", 0, CURRENT_TIMESTAMP);
+
