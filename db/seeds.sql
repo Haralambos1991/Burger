@@ -8,4 +8,5 @@ VALUES
         ("Chilli Burger", 0, CURRENT_TIMESTAMP),
         ("Rice Burger", 0, CURRENT_TIMESTAMP),
         ("Salmon Burger", 0, CURRENT_TIMESTAMP);
+        
 

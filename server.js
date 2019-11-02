@@ -16,14 +16,19 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 //Right now we gonna import routes and we gonna give the server access to them//
-let router = require("./controllers/burgersController.js");
-
+var routes = require("./controllers/burgersController.js");
+//app.use("/", routes);
 //app.use(routes);
 app.get("/", function(req, res) {
-    res.send("testing");
+    res.send("The app is successfully working");
+
+    //app.get("/", function(req, res) {
+    //res.send("testing");
+    //});
+
+    //Right now we gonna start our app//
 });
 
-//Right now we gonna start our app//
 app.listen(PORT, function() {
     console.log("App is listening on Port: " + PORT);
 });

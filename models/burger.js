@@ -4,7 +4,7 @@
 //Also inside burger.js, create the code that will call the ORM functions using burger specific input for the ORM.
 //Export at the end of the burger.js file.//
 
-var orm = "..config/orm.js";
+var orm = "config/orm.js";
 //We import the selectAll method to the burger.js and we trigger the callbacl function//
 let burger = {
     selectAll: function(cb) {
@@ -26,3 +26,6 @@ let burger = {
         });
     }
 };
+
+//Export the database function for use by burgers controllers.js, which is the overall controller driver.
+module.exports = burger;
