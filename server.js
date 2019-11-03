@@ -12,7 +12,7 @@ app.use("/public", express.static("public"));
 app.engine(
     ".hbs",
     exphbs({
-        defaultLayout: "main",
+        defaultLayout: "main.handlebars",
         extname: ".hbs",
         layoutsDir: path.join(__dirname, "views/layouts")
     })
