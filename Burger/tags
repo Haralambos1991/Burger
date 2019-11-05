@@ -1,0 +1,24 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+burger	controllers/burgersController.js	/^var burger = require("..\/models\/burger.js");$/;"	v
+burgerRoutes	server.js	/^var burgerRoutes = require(".\/controllers\/burgersController.js");$/;"	v
+burgers	db/schema.sql	/^CREATE TABLE burgers$/;"	t
+burgers.burgers_name	db/schema.sql	/^    id INT NOT NULL ,$/;"	F
+burgers.date	db/schema.sql	/^    devoured BOOLEAN NOT NULL,$/;"	F
+burgers.devoured	db/schema.sql	/^    burgers_name varchar(155) NOT NULL,$/;"	F
+burgers.id	db/schema.sql	/^($/;"	F
+connection	config/orm.js	/^var connection = require("..\/config\/connection.js");$/;"	v
+express	controllers/burgersController.js	/^var express = require("express");$/;"	v
+insertOne	config/orm.js	/^    },$/;"	m	class:orm
+insertOne	models/burger.js	/^    },$/;"	m	class:let
+mysql	config/connection.js	/^var mysql = require("mysql");$/;"	v
+orm	models/burger.js	/^var orm = "config\/orm.js";$/;"	v
+router	controllers/burgersController.js	/^var router = express.Router();$/;"	v
+selectAll	config/orm.js	/^var orm = {$/;"	m	class:orm
+selectAll	models/burger.js	/^let burger = {$/;"	m	class:let
+updateOne	config/orm.js	/^    },$/;"	m	class:orm
+updateOne	models/burger.js	/^    },$/;"	m	class:let
