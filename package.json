@@ -1,0 +1,31 @@
+{
+    "name": "burger",
+    "version": "1.0.0",
+    "description": "An app that allows the user to input a burger, watch the burger list grow and devour it.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Haralambos1991/Burger.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Haralambos1991/Burger/issues"
+    },
+    "homepage": "https://github.com/Haralambos1991/Burger#readme",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "dependencies": "0.0.1",
+        "dotenv": "^8.2.0",
+        "express": "^4.16.4",
+        "express-handlebars": "^3.1.0",
+        "hbs": "^4.0.6",
+        "module": "^1.2.5",
+        "mysql": "^2.16.0"
+    },
+    "devDependencies": {}
+}
